@@ -1,0 +1,135 @@
+/* Header.css */
+.header {
+    background-color: #EDDFE0;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+
+}
+
+.navbar div img{
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* color: white; */
+    color: #705C53;
+}
+
+.navbar-links {
+    /* list-style: none; */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar-links li {
+    /* display: inline; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.navbar-links a {
+    /* color: white; */
+    color: #705C53;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #edbbbf;
+    border-radius: 20px;
+    /* display: flex; */
+}
+
+.navbar-links a:hover {
+    /* text-decoration: underline; */
+    background-color: #F5F5F7;
+    transition: 0.8s;
+    border-radius: 15px;
+}
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #705C53;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: inherit;
+        align-items: center;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #705C53;
+        cursor: pointer;
+    }
+    
+
+    /* .navbar-logo{
+        margin-bottom: 20px;
+        font-size: 20px
+    } */
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+    .navbar-links.active {
+        display: flex;
+        background-color: #EDDFE0;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+
+    .navbar-links a {
+        /* font-size: 16px;
+        padding: 10px; */
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar div img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    text-decoration: double;
+    font-size: 35px;
+    color: #705C53;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+ul li{
+    padding-bottom: 5px;
+}
+
+
+
+.content{
+    text-decoration: none;
+    color: #705C53;
+    padding-bottom: 50px;
+}

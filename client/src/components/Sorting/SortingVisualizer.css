@@ -1,0 +1,66 @@
+/* Shared CSS for all sorting visualizers */
+
+.sort-visualizer {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section{
+    background-color:#F5F5F7 ;
+}
+
+h3 {
+    color: #705C53;
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #705C53;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* button:hover {
+    background-color: darkblue;
+} */
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.array-bar {
+    width: 30px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid gray;
+    transition: background-color 0.3s ease;
+}
+
+.array-bar.highlighted {
+    background-color: rgb(157, 255, 0);
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
